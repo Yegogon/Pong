@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15, y: -50}
+  m_AnchoredPosition: {x: -15, y: -100}
   m_SizeDelta: {x: 409.62, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &240695486
@@ -359,7 +359,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 239, y: -180}
+  m_AnchoredPosition: {x: 239, y: -230}
   m_SizeDelta: {x: 300, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &885619273
@@ -790,7 +790,7 @@ GameObject:
   - component: {fileID: 1651326868}
   - component: {fileID: 1651326867}
   m_Layer: 5
-  m_Name: Random Dude
+  m_Name: Someone I stole code from
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -835,7 +835,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '- Random dude from Unity forum (Code for music)'
+  m_text: '- Someone I stole code from on the Unity forum (Code for music)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8da99a91a85030549b99d074b2e4f7d6, type: 2}
   m_sharedMaterial: {fileID: 7339733228631816908, guid: 8da99a91a85030549b99d074b2e4f7d6, type: 2}
@@ -946,7 +946,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -15, y: 130}
+  m_AnchoredPosition: {x: -15, y: 150}
   m_SizeDelta: {x: 409.62, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1735948892
@@ -969,7 +969,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '*I pull things off the internet and put it into my game.'
+  m_text: '*I pull things off the internet (including this term) and put it into
+    my game.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8da99a91a85030549b99d074b2e4f7d6, type: 2}
   m_sharedMaterial: {fileID: 7339733228631816908, guid: 8da99a91a85030549b99d074b2e4f7d6, type: 2}

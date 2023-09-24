@@ -12,6 +12,9 @@ public class PongPlatformMovement : MonoBehaviour
     [Header("Or")]
     [SerializeField] private KeyCode LeftArrow = KeyCode.LeftArrow;
     [SerializeField] private KeyCode RightArrow = KeyCode.RightArrow;
+    [Header("Manage Controls:")]
+    [Tooltip("When toggled, the platform controls will be \"A\" and \"D\"")]
+    [SerializeField] private bool ToggleForLetters = false;
     [Header("Platform Generic Speed")]
     [SerializeField] private float GenericSpeed = 3f;
 
@@ -20,12 +23,11 @@ public class PongPlatformMovement : MonoBehaviour
     private void Awake()
     {
         _platform = GetComponent<Rigidbody2D>();
-
     }
 
     void FixedUpdate()
     {
-        if (true)
+        if (!ToggleForLetters)
         {
             if (Input.GetKey(RightArrow))
                 TurnRight();

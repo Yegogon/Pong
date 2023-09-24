@@ -17,11 +17,29 @@ public class PrefsCleaner : MonoBehaviour
         EnableButtons();
     }
 
+    private void OnDestroy()
+    {
+        PlayerPrefs.DeleteAll();
+        EnableButtons();
+    }
+    private void OnApplicationQuit()
+    {
+        PlayerPrefs.DeleteAll();
+        EnableButtons();
+    }
+
     void EnableButtons()
     {
-        ButtonPlayer1LeftSide.SetActive(true);
-        ButtonPlayer1RightSide.SetActive(true);
-        ButtonPlayer2LeftSide.SetActive(true);
-        ButtonPlayer2RightSide.SetActive(true);
+        if (ButtonPlayer1LeftSide && ButtonPlayer1RightSide && ButtonPlayer2LeftSide && ButtonPlayer2RightSide)
+        {
+            ButtonPlayer1LeftSide.SetActive(true);
+            ButtonPlayer1RightSide.SetActive(true);
+            ButtonPlayer2LeftSide.SetActive(true);
+            ButtonPlayer2RightSide.SetActive(true);
+        }
+        else
+        {
+            Debug.LogError("One of the buttons from \"PrefsCleaner\" script is null!");
+        }
     }
 }

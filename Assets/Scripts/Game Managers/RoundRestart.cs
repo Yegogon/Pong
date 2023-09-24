@@ -16,13 +16,14 @@ public class RoundRestart : MonoBehaviour
     [Header("SFX")]
     [SerializeField] AudioSource GoalSound;
     [Header("Game Over Text")]
-    [SerializeField] GameObject GameOverText1;
-    [SerializeField] GameObject GameOverText2;
+    [SerializeField] private GameObject GameOverText1;
+    [SerializeField] private GameObject GameOverText2;
+    [Header("Important Reference To A Game Object With \"PauseGame\" Script")]
+    [SerializeField] private PauseGame EndGame;
 
     ScoreManager scoreManager;
     Transform _position;
     Rigidbody2D _ball;
-    PauseGame _endGame;
 
 
     float x;
@@ -58,7 +59,7 @@ public class RoundRestart : MonoBehaviour
         {
             Time.timeScale = 0f;
             DisableButtons();
-            _endGame.Pause();
+            EndGame.Pause();
             GameOverText1.SetActive(true);
             GameOverText2.SetActive(true);
         }

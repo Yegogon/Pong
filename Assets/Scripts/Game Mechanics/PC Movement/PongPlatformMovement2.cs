@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,6 +12,9 @@ public class PongPlatformMovement2 : MonoBehaviour
     [Header("Or")]
     [SerializeField] private KeyCode LeftArrow = KeyCode.LeftArrow;
     [SerializeField] private KeyCode RightArrow = KeyCode.RightArrow;
+    [Header("Manage Controls:")]
+    [Tooltip("When toggled, the platform controls will be \"←\" and \"→\"")]
+    [SerializeField] private bool ToggleForArrows = false;
     [Header("Platform Generic Speed")]
     [SerializeField] private float GenericSpeed = 3f;
 
@@ -24,7 +27,7 @@ public class PongPlatformMovement2 : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (false)
+        if (!ToggleForArrows)
         {
             if (Input.GetKey(RightArrow))
                 TurnRight();
