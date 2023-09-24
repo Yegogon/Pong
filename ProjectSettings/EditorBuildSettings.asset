@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Game/TwoPlayerGame.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Menu/Main Menu.unity
+    guid: c73104e288ffd784c9bcbd939b811f0c
+  - enabled: 1
+    path: Assets/Scenes/Menu/FixedCredits.unity
+    guid: 5ef1a6206f21a0249989324a0dd36347
+  - enabled: 1
+    path: Assets/Scenes/Menu/SettingsScene.unity
+    guid: 83f0ddd7809ca0b418d9dae97d516fae
+  - enabled: 1
+    path: Assets/Scenes/Game/ImpossibleSingleplayer.unity
+    guid: 40dbb471d13283c478d3064ab6ff7164
+  m_configObjects: {}
