@@ -285,6 +285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BounceSource: {fileID: 13772581}
+  Acceleration: 0.1
 --- !u!114 &13772580
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -10,37 +10,26 @@ public class MainMenuScripted : MonoBehaviour
     [Tooltip("Write down the asset name of this scene")]
     [SerializeField] private string TwoPlayerGame = "";
     [Tooltip("Write down the asset name of this scene")]
-    [SerializeField] private string ImpossibleSingleplayer = "";
+    [SerializeField] private string Singleplayer = "";
     [Tooltip("Write down the asset name of this scene")]
     [SerializeField] private string Settings = "";
+    [Tooltip("Write down the asset name of this scene")]
+    [SerializeField] private string FAQ = "";
     [Tooltip("Write down the asset name of this scene")]
     [SerializeField] private string Credits = "";
 
 
 
     //public voids for buttons
-    public void LoadTwoPlayerGame()
-    {
-        SceneManager.LoadScene(TwoPlayerGame);
-    }
+    public void LoadTwoPlayerGame() => SceneManager.LoadScene(TwoPlayerGame);
 
-    public void LoadImpossibleSingleplayer()
-    {
-        SceneManager.LoadScene(ImpossibleSingleplayer);
-    }
+    public void LoadSingleplayer() => SceneManager.LoadScene(Singleplayer);
 
-    public void LoadSettings()
-    {
-        SceneManager.LoadScene(Settings);
-    }
+    public void LoadSettings() => SceneManager.LoadScene(Settings);
 
-    public void LoadCredits()
-    {
-        SceneManager.LoadScene(Credits);
-    }
+    public void LoadFAQ() => SceneManager.LoadScene(FAQ);
 
-    public void ExitGame()
-    {
-        Application.Quit();
-    }
+    public void LoadCredits() => SceneManager.LoadScene(Credits);
+
+    public void ExitGame() => Application.Quit();
 }

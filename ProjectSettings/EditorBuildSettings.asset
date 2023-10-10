@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu/SettingsScene.unity
     guid: 83f0ddd7809ca0b418d9dae97d516fae
   - enabled: 1
-    path: Assets/Scenes/Game/ImpossibleSingleplayer.unity
+    path: Assets/Scenes/Game/Singleplayer.unity
     guid: 40dbb471d13283c478d3064ab6ff7164
+  - enabled: 1
+    path: Assets/Scenes/Menu/GameHints.unity
+    guid: 37ee268bac68d28468caf34486050f4d
   m_configObjects: {}

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bounce : MonoBehaviour
 {
     [SerializeField] AudioSource BounceSource;
+    [SerializeField] float Acceleration = 0.1f;
 
     Rigidbody2D _rb;
     Vector3 _lastVelocity;
@@ -14,7 +15,7 @@ public class Bounce : MonoBehaviour
     {
         wireOutput = new SoundWire();
         _rb = GetComponent<Rigidbody2D>();
-        BounceSource.volume = wireOutput.SFXWire / 100f;
+        //BounceSource.volume = wireOutput.SFXWire / 100f;
     }
 
     private void FixedUpdate()
@@ -25,7 +26,7 @@ public class Bounce : MonoBehaviour
     {
         var speed = _lastVelocity.magnitude;
         var direction = Vector3.Reflect(_lastVelocity.normalized, collision.contacts[0].normal);
-        _rb.velocity = direction * Mathf.Max(speed, 0f);
+        _rb.velocity = direction * Mathf.Max(speed + Acceleration, 0f);
         BounceSource.Play();
     }
 }
