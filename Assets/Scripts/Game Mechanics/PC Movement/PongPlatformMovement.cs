@@ -56,9 +56,6 @@ public class PongPlatformMovement : MonoBehaviour
     public void TurnRight()
     {
         _platform.velocity += Vector2.right * GenericSpeed;
-        Debug.Log(_platform);
-        Debug.Log(_platform.velocity);
-        Debug.Log(GenericSpeed);
     }
 
     public void TurnLeft()
