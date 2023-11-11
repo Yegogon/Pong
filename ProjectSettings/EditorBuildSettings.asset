@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu/SettingsScene.unity
     guid: 83f0ddd7809ca0b418d9dae97d516fae
+  - enabled: 1
+    path: Assets/Scenes/Menu/PullstackExplanation.unity
+    guid: 222f7a1254c13e945a55489c103763bd
   m_configObjects: {}
