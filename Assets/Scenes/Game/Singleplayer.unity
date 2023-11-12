@@ -3155,10 +3155,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GenericSpeed: 70
-  ButtonPlayer1LeftSide: {fileID: 0}
-  ButtonPlayer1RightSide: {fileID: 0}
-  ButtonPlayer2LeftSide: {fileID: 0}
-  ButtonPlayer2RightSide: {fileID: 0}
+  ButtonPlayer1LeftSide: {fileID: 1235101621}
+  ButtonPlayer1RightSide: {fileID: 1944341755}
+  ButtonPlayer2LeftSide: {fileID: 1235101621}
+  ButtonPlayer2RightSide: {fileID: 1944341755}
   GoalSound: {fileID: 1856942334}
   GameOverText1: {fileID: 1595344819}
   GameOverText2: {fileID: 1006177004}
